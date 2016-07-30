@@ -21,5 +21,23 @@ var canWinNim = function(n) {
 //console.log(canWinNim(4));
 
 var getSum = function(a, b) {
-    var result;
+	if(b>0){
+		while(b>0){
+			a++;
+			b--;
+		}
+	}
+	else{
+		while(b<0){
+			a--;
+			b++;
+		}
+	}
+	return a;
 };
+
+/*console.log(getSum(1,2));
+console.log(getSum(-1,-2));
+console.log(getSum(-1,2));
+console.log(getSum(1,-2));*/
+console.log(getSum(2147483647,-2147483648));
