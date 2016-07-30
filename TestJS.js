@@ -19,3 +19,7 @@ var canWinNim = function(n) {
 };
 //console.log(canWinNim(1));
 //console.log(canWinNim(4));
+
+var getSum = function(a, b) {
+    
+};
